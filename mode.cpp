@@ -27,6 +27,22 @@ void prodFactorial(){
    if (a == 1){select();}else{exit(0);}
 }
 
+void dispSemplici(){
+   system("clear");
+   std::cout<<"  n!  \n";
+   std::cout<<"------\n";
+   std::cout<<"(n-k)\n\n";
+   int n;
+   int k;
+   std::cout<<"number: "; std::cin>>n;
+   std::cout<<"k:      "; std::cin>>k;
+   std::cout<<"\n\nresult: "; float res = returnFact(n) / (returnFact(n-k)); std::cout<<res;
+   int a;
+   std::cout<<"\n\npress 1 for continue, 2 for quit: "; std::cin>>a;
+   if (a == 1){select();}else{exit(0);}
+
+}
+
 int select(){
    system("clear");
    std::cout<<"                                                 \n _____ _____            _         _     _            \n|  _  |   __|   ___ ___| |___ _ _| |___| |_ ___ ___  \n|   __|__   |  |  _| .'| |  _| | | | .'|  _| . |  _| \n|__|  |_____|  |___|__,|_|___|___|_|__,|_| |___|_|\n\n\n";
@@ -39,6 +55,9 @@ int select(){
          break;
       case 2:
          prodFactorial();
+         break;
+      case 3:
+         dispSemplici();
          break;
    }
    return 0;
