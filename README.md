@@ -1,2 +1,2 @@
 # Pes_Calculator
-Calculator for Probability and Statistic
+Calculator for Probability and Statistics
