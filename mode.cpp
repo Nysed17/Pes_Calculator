@@ -4,30 +4,33 @@
 int select();
 
 void factorial(){
+   func resf;
    system("clear");
    std::cout<<"n!\n\n";
    int n;
    std::cout<<"number: "; std::cin>>n;
-   std::cout<<"\n\nresult: "; float res = returnFact(n); std::cout<<res;
+   std::cout<<"\n\nresult: "; float res = resf.returnFact(n); std::cout<<res;
    int a;
    std::cout<<"\n\npress 1 for continue, 2 for quit: "; std::cin>>a;
    if (a == 1){select();}else{exit(0);}
 }
 
 void prodFactorial(){
+   func resf;
    system("clear");
    std::cout<<"n1! * n2!\n\n";
    int n1;
    int n2;
    std::cout<<"number1: "; std::cin>>n1;
    std::cout<<"number2: "; std::cin>>n2;
-   std::cout<<"\n\nresult: "; float res = returnFact(n1) * returnFact(n2); std::cout<<res;
+   std::cout<<"\n\nresult: "; float res = resf.returnFact(n1) * resf.returnFact(n2); std::cout<<res;
    int a;
    std::cout<<"\n\npress 1 for continue, 2 for quit: "; std::cin>>a;
    if (a == 1){select();}else{exit(0);}
 }
 
 void dispSemplici(){
+   func resf;
    system("clear");
    std::cout<<"  n!  \n";
    std::cout<<"------\n";
@@ -36,7 +39,7 @@ void dispSemplici(){
    int k;
    std::cout<<"number: "; std::cin>>n;
    std::cout<<"k:      "; std::cin>>k;
-   std::cout<<"\n\nresult: "; float res = returnFact(n) / (returnFact(n-k)); std::cout<<res;
+   std::cout<<"\n\nresult: "; float res = resf.returnFact(n) / (resf.returnFact(n-k)); std::cout<<res;
    int a;
    std::cout<<"\n\npress 1 for continue, 2 for quit: "; std::cin>>a;
    if (a == 1){select();}else{exit(0);}
