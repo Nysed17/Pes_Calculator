@@ -1,0 +1,153 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta http-equiv="Content-Language" content="en" />
+    <link rel="stylesheet" href="cstring.css">
+    <title>TreeView</title>
+    <script type="text/javascript">
+    <!-- // Hide script from old browsers
+    
+    function toggleFolder(id, imageNode) 
+    {
+      var folder = document.getElementById(id);
+      var l = imageNode.src.length;
+      if (imageNode.src.substring(l-20,l)=="ftv2folderclosed.png" || 
+          imageNode.src.substring(l-18,l)=="ftv2folderopen.png")
+      {
+        imageNode = imageNode.previousSibling;
+        l = imageNode.src.length;
+      }
+      if (folder == null) 
+      {
+      } 
+      else if (folder.style.display == "block") 
+      {
+        if (imageNode != null) 
+        {
+          imageNode.nextSibling.src = "ftv2folderclosed.png";
+          if (imageNode.src.substring(l-13,l) == "ftv2mnode.png")
+          {
+            imageNode.src = "ftv2pnode.png";
+          }
+          else if (imageNode.src.substring(l-17,l) == "ftv2mlastnode.png")
+          {
+            imageNode.src = "ftv2plastnode.png";
+          }
+        }
+        folder.style.display = "none";
+      } 
+      else 
+      {
+        if (imageNode != null) 
+        {
+          imageNode.nextSibling.src = "ftv2folderopen.png";
+          if (imageNode.src.substring(l-13,l) == "ftv2pnode.png")
+          {
+            imageNode.src = "ftv2mnode.png";
+          }
+          else if (imageNode.src.substring(l-17,l) == "ftv2plastnode.png")
+          {
+            imageNode.src = "ftv2mlastnode.png";
+          }
+        }
+        folder.style.display = "block";
+      }
+    }
+
+    // End script hiding -->        
+    </script>
+  </head>
+
+  <body class="ftvtree">
+    <div class="directory">
+      <h3>cstring - Libraries</h3>
+      <div style="display: block;">
+        <p><img src="ftv2node.png" alt="o" width=16 height=22 /><img src="ftv2doc.png" alt="*" width=24 height=22 /><a class="el" href="main.html" target="basefrm">What is cstring?</a></p>
+        <p><img src="ftv2pnode.png" alt="o" width=16 height=22 onclick="toggleFolder('folder1', this)"/><img src="ftv2folderclosed.png" alt="+" width=24 height=22 onclick="toggleFolder('folder1', this)"/><a class="el" href="modules.html" target="basefrm">cstring - Libraries Modules</a></p>
+        <div id="folder1">
+          <p><img src="ftv2vertline.png" alt="|" width=16 height=22 /><img src="ftv2plastnode.png" alt="\" width=16 height=22 onclick="toggleFolder('folder2', this)"/><img src="ftv2folderclosed.png" alt="+" width=24 height=22 onclick="toggleFolder('folder2', this)"/><a class="el" href="group__group____cstring__api.html" target="basefrm">cstring API</a></p>
+          <div id="folder2">
+            <p><img src="ftv2vertline.png" alt="|" width=16 height=22 /><img src="ftv2blank.png" alt="&nbsp;" width=16 height=22 /><img src="ftv2pnode.png" alt="o" width=16 height=22 onclick="toggleFolder('folder3', this)"/><img src="ftv2folderclosed.png" alt="+" width=24 height=22 onclick="toggleFolder('folder3', this)"/><a class="el" href="group__group____cstring__api____flags.html" target="basefrm">Function Control Flags</a></p>
+            <div id="folder3">
+              <p><img src="ftv2vertline.png" alt="|" width=16 height=22 /><img src="ftv2blank.png" alt="&nbsp;" width=16 height=22 /><img src="ftv2vertline.png" alt="|" width=16 height=22 /><img src="ftv2plastnode.png" alt="\" width=16 height=22 onclick="toggleFolder('folder4', this)"/><img src="ftv2folderclosed.png" alt="+" width=24 height=22 onclick="toggleFolder('folder4', this)"/><a class="el" href="group__group____cstring__api____flags.html" target="basefrm">Defines</a></p>
+              <div id="folder4">
+                <p><img src="ftv2vertline.png" alt="|" width=16 height=22 /><img src="ftv2blank.png" alt="&nbsp;" width=16 height=22 /><img src="ftv2vertline.png" alt="|" width=16 height=22 /><img src="ftv2blank.png" alt="&nbsp;" width=16 height=22 /><img src="ftv2node.png" alt="o" width=16 height=22 /><img src="ftv2doc.png" alt="*" width=24 height=22 /><a class="el" href="group__group____cstring__api____flags.html#g0800117cb5a06ce9be16565f78535176" target="basefrm">CSTRING_F_ARENA_MASK</a></p>
+                <p><img src="ftv2vertline.png" alt="|" width=16 height=22 /><img src="ftv2blank.png" alt="&nbsp;" width=16 height=22 /><img src="ftv2vertline.png" alt="|" width=16 height=22 /><img src="ftv2blank.png" alt="&nbsp;" width=16 height=22 /><img src="ftv2node.png" alt="o" width=16 height=22 /><img src="ftv2doc.png" alt="*" width=24 height=22 /><a class="el" href="group__group____cstring__api____flags.html#g25007af29febcee61b66d45c190c95f4" target="basefrm">CSTRING_F_CUSTOMARENA_CC_CDECL</a></p>
+                <p><img src="ftv2vertline.png" alt="|" width=16 height=22 /><img src="ftv2blank.png" alt="&nbsp;" width=16 height=22 /><img src="ftv2vertline.png" alt="|" width=16 height=22 /><img src="ftv2blank.png" alt="&nbsp;" width=16 height=22 /><img src="ftv2node.png" alt="o" width=16 height=22 /><img src="ftv2doc.png" alt="*" width=24 height=22 /><a class="el" href="group__group____cstring__api____flags.html#g46d9b74b3bad3090ddea5e1165b8c485" target="basefrm">CSTRING_F_CUSTOMARENA_CC_STDCALL</a></p>
+                <p><img src="ftv2vertline.png" alt="|" width=16 height=22 /><img src="ftv2blank.png" alt="&nbsp;" width=16 height=22 /><img src="ftv2vertline.png" alt="|" width=16 height=22 /><img src="ftv2blank.png" alt="&nbsp;" width=16 height=22 /><img src="ftv2node.png" alt="o" width=16 height=22 /><img src="ftv2doc.png" alt="*" width=24 height=22 /><a class="el" href="group__group____cstring__api____flags.html#g7c6fd323d04bff372cc2ca560a1bacda" target="basefrm">CSTRING_F_MEMORY_CAN_GROW_TO_HEAP</a></p>
+                <p><img src="ftv2vertline.png" alt="|" width=16 height=22 /><img src="ftv2blank.png" alt="&nbsp;" width=16 height=22 /><img src="ftv2vertline.png" alt="|" width=16 height=22 /><img src="ftv2blank.png" alt="&nbsp;" width=16 height=22 /><img src="ftv2node.png" alt="o" width=16 height=22 /><img src="ftv2doc.png" alt="*" width=24 height=22 /><a class="el" href="group__group____cstring__api____flags.html#g96d703e50a8694fcd57da50f981adb5a" target="basefrm">CSTRING_F_MEMORY_IS_BORROWED</a></p>
+                <p><img src="ftv2vertline.png" alt="|" width=16 height=22 /><img src="ftv2blank.png" alt="&nbsp;" width=16 height=22 /><img src="ftv2vertline.png" alt="|" width=16 height=22 /><img src="ftv2blank.png" alt="&nbsp;" width=16 height=22 /><img src="ftv2node.png" alt="o" width=16 height=22 /><img src="ftv2doc.png" alt="*" width=24 height=22 /><a class="el" href="group__group____cstring__api____flags.html#g61e7068cc5ea3f66845cfcd1c4e47d79" target="basefrm">CSTRING_F_MEMORY_IS_CONST</a></p>
+                <p><img src="ftv2vertline.png" alt="|" width=16 height=22 /><img src="ftv2blank.png" alt="&nbsp;" width=16 height=22 /><img src="ftv2vertline.png" alt="|" width=16 height=22 /><img src="ftv2blank.png" alt="&nbsp;" width=16 height=22 /><img src="ftv2node.png" alt="o" width=16 height=22 /><img src="ftv2doc.png" alt="*" width=24 height=22 /><a class="el" href="group__group____cstring__api____flags.html#g6f097f92d871ef69c08316ecf1f79d00" target="basefrm">CSTRING_F_MEMORY_IS_FIXED</a></p>
+                <p><img src="ftv2vertline.png" alt="|" width=16 height=22 /><img src="ftv2blank.png" alt="&nbsp;" width=16 height=22 /><img src="ftv2vertline.png" alt="|" width=16 height=22 /><img src="ftv2blank.png" alt="&nbsp;" width=16 height=22 /><img src="ftv2node.png" alt="o" width=16 height=22 /><img src="ftv2doc.png" alt="*" width=24 height=22 /><a class="el" href="group__group____cstring__api____flags.html#gba74c8236f1735fc00695a7c7490ddca" target="basefrm">CSTRING_F_MEMORY_IS_INTERNAL_HEAP</a></p>
+                <p><img src="ftv2vertline.png" alt="|" width=16 height=22 /><img src="ftv2blank.png" alt="&nbsp;" width=16 height=22 /><img src="ftv2vertline.png" alt="|" width=16 height=22 /><img src="ftv2blank.png" alt="&nbsp;" width=16 height=22 /><img src="ftv2node.png" alt="o" width=16 height=22 /><img src="ftv2doc.png" alt="*" width=24 height=22 /><a class="el" href="group__group____cstring__api____flags.html#g2fcebd6d2443df409647154ed1a9e51c" target="basefrm">CSTRING_F_MEMORY_IS_OFFSET</a></p>
+                <p><img src="ftv2vertline.png" alt="|" width=16 height=22 /><img src="ftv2blank.png" alt="&nbsp;" width=16 height=22 /><img src="ftv2vertline.png" alt="|" width=16 height=22 /><img src="ftv2blank.png" alt="&nbsp;" width=16 height=22 /><img src="ftv2node.png" alt="o" width=16 height=22 /><img src="ftv2doc.png" alt="*" width=24 height=22 /><a class="el" href="group__group____cstring__api____flags.html#g3ba1c168e6c10526ac328ddf202508f1" target="basefrm">CSTRING_F_MEMORY_IS_READONLY</a></p>
+                <p><img src="ftv2vertline.png" alt="|" width=16 height=22 /><img src="ftv2blank.png" alt="&nbsp;" width=16 height=22 /><img src="ftv2vertline.png" alt="|" width=16 height=22 /><img src="ftv2blank.png" alt="&nbsp;" width=16 height=22 /><img src="ftv2node.png" alt="o" width=16 height=22 /><img src="ftv2doc.png" alt="*" width=24 height=22 /><a class="el" href="group__group____cstring__api____flags.html#g1e7b94ae05ba2d2f85a91cef87269a0c" target="basefrm">CSTRING_F_TYPE_MASK</a></p>
+                <p><img src="ftv2vertline.png" alt="|" width=16 height=22 /><img src="ftv2blank.png" alt="&nbsp;" width=16 height=22 /><img src="ftv2vertline.png" alt="|" width=16 height=22 /><img src="ftv2blank.png" alt="&nbsp;" width=16 height=22 /><img src="ftv2node.png" alt="o" width=16 height=22 /><img src="ftv2doc.png" alt="*" width=24 height=22 /><a class="el" href="group__group____cstring__api____flags.html#g1e2829c169532d025292a87d7acbd083" target="basefrm">CSTRING_F_USE_CUSTOMARENAFUNCTIONS</a></p>
+                <p><img src="ftv2vertline.png" alt="|" width=16 height=22 /><img src="ftv2blank.png" alt="&nbsp;" width=16 height=22 /><img src="ftv2vertline.png" alt="|" width=16 height=22 /><img src="ftv2blank.png" alt="&nbsp;" width=16 height=22 /><img src="ftv2node.png" alt="o" width=16 height=22 /><img src="ftv2doc.png" alt="*" width=24 height=22 /><a class="el" href="group__group____cstring__api____flags.html#gf3c7cbbefe1052ecc4407d8a1bfd4e75" target="basefrm">CSTRING_F_USE_REALLOC</a></p>
+                <p><img src="ftv2vertline.png" alt="|" width=16 height=22 /><img src="ftv2blank.png" alt="&nbsp;" width=16 height=22 /><img src="ftv2vertline.png" alt="|" width=16 height=22 /><img src="ftv2blank.png" alt="&nbsp;" width=16 height=22 /><img src="ftv2node.png" alt="o" width=16 height=22 /><img src="ftv2doc.png" alt="*" width=24 height=22 /><a class="el" href="group__group____cstring__api____flags.html#ge594f76c3836eeaacf3dd02bac110cf3" target="basefrm">CSTRING_F_USE_WINDOWS_COM_TASK_MEMORY</a></p>
+                <p><img src="ftv2vertline.png" alt="|" width=16 height=22 /><img src="ftv2blank.png" alt="&nbsp;" width=16 height=22 /><img src="ftv2vertline.png" alt="|" width=16 height=22 /><img src="ftv2blank.png" alt="&nbsp;" width=16 height=22 /><img src="ftv2node.png" alt="o" width=16 height=22 /><img src="ftv2doc.png" alt="*" width=24 height=22 /><a class="el" href="group__group____cstring__api____flags.html#gd608a4e294f974c176520c1494b7d378" target="basefrm">CSTRING_F_USE_WINDOWS_GLOBAL_MEMORY</a></p>
+                <p><img src="ftv2vertline.png" alt="|" width=16 height=22 /><img src="ftv2blank.png" alt="&nbsp;" width=16 height=22 /><img src="ftv2vertline.png" alt="|" width=16 height=22 /><img src="ftv2blank.png" alt="&nbsp;" width=16 height=22 /><img src="ftv2lastnode.png" alt="\" width=16 height=22 /><img src="ftv2doc.png" alt="*" width=24 height=22 /><a class="el" href="group__group____cstring__api____flags.html#gf18baa810edc3c30d8a4578ea2451cb0" target="basefrm">CSTRING_F_USE_WINDOWS_PROCESSHEAP_MEMORY</a></p>
+              </div>
+            </div>
+            <p><img src="ftv2vertline.png" alt="|" width=16 height=22 /><img src="ftv2blank.png" alt="&nbsp;" width=16 height=22 /><img src="ftv2pnode.png" alt="o" width=16 height=22 onclick="toggleFolder('folder5', this)"/><img src="ftv2folderclosed.png" alt="+" width=24 height=22 onclick="toggleFolder('folder5', this)"/><a class="el" href="group__group____cstring__api.html" target="basefrm">Defines</a></p>
+            <div id="folder5">
+              <p><img src="ftv2vertline.png" alt="|" width=16 height=22 /><img src="ftv2blank.png" alt="&nbsp;" width=16 height=22 /><img src="ftv2vertline.png" alt="|" width=16 height=22 /><img src="ftv2lastnode.png" alt="\" width=16 height=22 /><img src="ftv2doc.png" alt="*" width=24 height=22 /><a class="el" href="group__group____cstring__api.html#g7f275fc1d7e241bddbd747ae6a40a6f6" target="basefrm">cstring_t_DEFAULT</a></p>
+            </div>
+            <p><img src="ftv2vertline.png" alt="|" width=16 height=22 /><img src="ftv2blank.png" alt="&nbsp;" width=16 height=22 /><img src="ftv2pnode.png" alt="o" width=16 height=22 onclick="toggleFolder('folder6', this)"/><img src="ftv2folderclosed.png" alt="+" width=24 height=22 onclick="toggleFolder('folder6', this)"/><a class="el" href="group__group____cstring__api.html" target="basefrm">Typedefs</a></p>
+            <div id="folder6">
+              <p><img src="ftv2vertline.png" alt="|" width=16 height=22 /><img src="ftv2blank.png" alt="&nbsp;" width=16 height=22 /><img src="ftv2vertline.png" alt="|" width=16 height=22 /><img src="ftv2lastnode.png" alt="\" width=16 height=22 /><img src="ftv2doc.png" alt="*" width=24 height=22 /><a class="el" href="group__group____cstring__api.html#g9b8789169a6e856abea2c862f45ad4be" target="basefrm">cstring_flags_t</a></p>
+            </div>
+            <p><img src="ftv2vertline.png" alt="|" width=16 height=22 /><img src="ftv2blank.png" alt="&nbsp;" width=16 height=22 /><img src="ftv2pnode.png" alt="o" width=16 height=22 onclick="toggleFolder('folder7', this)"/><img src="ftv2folderclosed.png" alt="+" width=24 height=22 onclick="toggleFolder('folder7', this)"/><a class="el" href="group__group____cstring__api.html" target="basefrm">Enumerations</a></p>
+            <div id="folder7">
+              <p><img src="ftv2vertline.png" alt="|" width=16 height=22 /><img src="ftv2blank.png" alt="&nbsp;" width=16 height=22 /><img src="ftv2vertline.png" alt="|" width=16 height=22 /><img src="ftv2lastnode.png" alt="\" width=16 height=22 /><img src="ftv2doc.png" alt="*" width=24 height=22 /><a class="el" href="group__group____cstring__api.html#g54244b7f245ff8c57097435d2b527938" target="basefrm">CSTRING_RC</a></p>
+            </div>
+            <p><img src="ftv2vertline.png" alt="|" width=16 height=22 /><img src="ftv2blank.png" alt="&nbsp;" width=16 height=22 /><img src="ftv2pnode.png" alt="o" width=16 height=22 onclick="toggleFolder('folder8', this)"/><img src="ftv2folderclosed.png" alt="+" width=24 height=22 onclick="toggleFolder('folder8', this)"/><a class="el" href="group__group____cstring__api.html" target="basefrm">Functions</a></p>
+            <div id="folder8">
+              <p><img src="ftv2vertline.png" alt="|" width=16 height=22 /><img src="ftv2blank.png" alt="&nbsp;" width=16 height=22 /><img src="ftv2vertline.png" alt="|" width=16 height=22 /><img src="ftv2node.png" alt="o" width=16 height=22 /><img src="ftv2doc.png" alt="*" width=24 height=22 /><a class="el" href="group__group____cstring__api.html#g5e0f0c34866a1e0697a887dc1efa279d" target="basefrm">cstring_append</a></p>
+              <p><img src="ftv2vertline.png" alt="|" width=16 height=22 /><img src="ftv2blank.png" alt="&nbsp;" width=16 height=22 /><img src="ftv2vertline.png" alt="|" width=16 height=22 /><img src="ftv2node.png" alt="o" width=16 height=22 /><img src="ftv2doc.png" alt="*" width=24 height=22 /><a class="el" href="group__group____cstring__api.html#g47b8f8653362095a3ff01aa5737976ab" target="basefrm">cstring_appendLen</a></p>
+              <p><img src="ftv2vertline.png" alt="|" width=16 height=22 /><img src="ftv2blank.png" alt="&nbsp;" width=16 height=22 /><img src="ftv2vertline.png" alt="|" width=16 height=22 /><img src="ftv2node.png" alt="o" width=16 height=22 /><img src="ftv2doc.png" alt="*" width=24 height=22 /><a class="el" href="group__group____cstring__api.html#g5f3b3528568397913073627f0519c512" target="basefrm">cstring_assign</a></p>
+              <p><img src="ftv2vertline.png" alt="|" width=16 height=22 /><img src="ftv2blank.png" alt="&nbsp;" width=16 height=22 /><img src="ftv2vertline.png" alt="|" width=16 height=22 /><img src="ftv2node.png" alt="o" width=16 height=22 /><img src="ftv2doc.png" alt="*" width=24 height=22 /><a class="el" href="group__group____cstring__api.html#gb3abfd602615ed535763c1cc287d17f0" target="basefrm">cstring_assignLen</a></p>
+              <p><img src="ftv2vertline.png" alt="|" width=16 height=22 /><img src="ftv2blank.png" alt="&nbsp;" width=16 height=22 /><img src="ftv2vertline.png" alt="|" width=16 height=22 /><img src="ftv2node.png" alt="o" width=16 height=22 /><img src="ftv2doc.png" alt="*" width=24 height=22 /><a class="el" href="group__group____cstring__api.html#g3b966ef9162f8e642e5e61c863f3f5d5" target="basefrm">cstring_copy</a></p>
+              <p><img src="ftv2vertline.png" alt="|" width=16 height=22 /><img src="ftv2blank.png" alt="&nbsp;" width=16 height=22 /><img src="ftv2vertline.png" alt="|" width=16 height=22 /><img src="ftv2node.png" alt="o" width=16 height=22 /><img src="ftv2doc.png" alt="*" width=24 height=22 /><a class="el" href="group__group____cstring__api.html#gd7609f5a3cc45f1b253eb1a973cc31b8" target="basefrm">cstring_create</a></p>
+              <p><img src="ftv2vertline.png" alt="|" width=16 height=22 /><img src="ftv2blank.png" alt="&nbsp;" width=16 height=22 /><img src="ftv2vertline.png" alt="|" width=16 height=22 /><img src="ftv2node.png" alt="o" width=16 height=22 /><img src="ftv2doc.png" alt="*" width=24 height=22 /><a class="el" href="group__group____cstring__api.html#gc2a04a05eafb79f1379c7ee53cf6483a" target="basefrm">cstring_createEx</a></p>
+              <p><img src="ftv2vertline.png" alt="|" width=16 height=22 /><img src="ftv2blank.png" alt="&nbsp;" width=16 height=22 /><img src="ftv2vertline.png" alt="|" width=16 height=22 /><img src="ftv2node.png" alt="o" width=16 height=22 /><img src="ftv2doc.png" alt="*" width=24 height=22 /><a class="el" href="group__group____cstring__api.html#g090a18056a326538bc98069152c68a69" target="basefrm">cstring_createLen</a></p>
+              <p><img src="ftv2vertline.png" alt="|" width=16 height=22 /><img src="ftv2blank.png" alt="&nbsp;" width=16 height=22 /><img src="ftv2vertline.png" alt="|" width=16 height=22 /><img src="ftv2node.png" alt="o" width=16 height=22 /><img src="ftv2doc.png" alt="*" width=24 height=22 /><a class="el" href="group__group____cstring__api.html#gbd623b9638b07036364c43b1d529d3b7" target="basefrm">cstring_createLenEx</a></p>
+              <p><img src="ftv2vertline.png" alt="|" width=16 height=22 /><img src="ftv2blank.png" alt="&nbsp;" width=16 height=22 /><img src="ftv2vertline.png" alt="|" width=16 height=22 /><img src="ftv2node.png" alt="o" width=16 height=22 /><img src="ftv2doc.png" alt="*" width=24 height=22 /><a class="el" href="group__group____cstring__api.html#g5777b61afd69ce956d4ca66e0671cc52" target="basefrm">cstring_createN</a></p>
+              <p><img src="ftv2vertline.png" alt="|" width=16 height=22 /><img src="ftv2blank.png" alt="&nbsp;" width=16 height=22 /><img src="ftv2vertline.png" alt="|" width=16 height=22 /><img src="ftv2node.png" alt="o" width=16 height=22 /><img src="ftv2doc.png" alt="*" width=24 height=22 /><a class="el" href="group__group____cstring__api.html#gac460578aca86af82a7e2c02123e8540" target="basefrm">cstring_destroy</a></p>
+              <p><img src="ftv2vertline.png" alt="|" width=16 height=22 /><img src="ftv2blank.png" alt="&nbsp;" width=16 height=22 /><img src="ftv2vertline.png" alt="|" width=16 height=22 /><img src="ftv2node.png" alt="o" width=16 height=22 /><img src="ftv2doc.png" alt="*" width=24 height=22 /><a class="el" href="group__group____cstring__api.html#g0be08b4b3bc0c40a50a531c86d2fca0e" target="basefrm">cstring_getStatusCodeString</a></p>
+              <p><img src="ftv2vertline.png" alt="|" width=16 height=22 /><img src="ftv2blank.png" alt="&nbsp;" width=16 height=22 /><img src="ftv2vertline.png" alt="|" width=16 height=22 /><img src="ftv2node.png" alt="o" width=16 height=22 /><img src="ftv2doc.png" alt="*" width=24 height=22 /><a class="el" href="group__group____cstring__api.html#gb9ec0ffeb39cef0f6cbeaabf52cc83d8" target="basefrm">cstring_init</a></p>
+              <p><img src="ftv2vertline.png" alt="|" width=16 height=22 /><img src="ftv2blank.png" alt="&nbsp;" width=16 height=22 /><img src="ftv2vertline.png" alt="|" width=16 height=22 /><img src="ftv2node.png" alt="o" width=16 height=22 /><img src="ftv2doc.png" alt="*" width=24 height=22 /><a class="el" href="group__group____cstring__api.html#ge81b99b58d3b60c81eadf0c08c0294b1" target="basefrm">cstring_setCapacity</a></p>
+              <p><img src="ftv2vertline.png" alt="|" width=16 height=22 /><img src="ftv2blank.png" alt="&nbsp;" width=16 height=22 /><img src="ftv2vertline.png" alt="|" width=16 height=22 /><img src="ftv2node.png" alt="o" width=16 height=22 /><img src="ftv2doc.png" alt="*" width=24 height=22 /><a class="el" href="group__group____cstring__api.html#g9d20f065501a565e32bb289314c7e4a0" target="basefrm">cstring_swap</a></p>
+              <p><img src="ftv2vertline.png" alt="|" width=16 height=22 /><img src="ftv2blank.png" alt="&nbsp;" width=16 height=22 /><img src="ftv2vertline.png" alt="|" width=16 height=22 /><img src="ftv2node.png" alt="o" width=16 height=22 /><img src="ftv2doc.png" alt="*" width=24 height=22 /><a class="el" href="group__group____cstring__api.html#ga6493f2db9c6b7f24ef20b3c78aaae81" target="basefrm">cstring_truncate</a></p>
+              <p><img src="ftv2vertline.png" alt="|" width=16 height=22 /><img src="ftv2blank.png" alt="&nbsp;" width=16 height=22 /><img src="ftv2vertline.png" alt="|" width=16 height=22 /><img src="ftv2lastnode.png" alt="\" width=16 height=22 /><img src="ftv2doc.png" alt="*" width=24 height=22 /><a class="el" href="group__group____cstring__api.html#g8fadf22f8824bf7ffebb4544ad93090e" target="basefrm">cstring_yield2</a></p>
+            </div>
+            <p><img src="ftv2vertline.png" alt="|" width=16 height=22 /><img src="ftv2blank.png" alt="&nbsp;" width=16 height=22 /><img src="ftv2plastnode.png" alt="\" width=16 height=22 onclick="toggleFolder('folder9', this)"/><img src="ftv2folderclosed.png" alt="+" width=24 height=22 onclick="toggleFolder('folder9', this)"/><a class="el" href="group__group____cstring__api.html" target="basefrm">Classes</a></p>
+            <div id="folder9">
+              <p><img src="ftv2vertline.png" alt="|" width=16 height=22 /><img src="ftv2blank.png" alt="&nbsp;" width=16 height=22 /><img src="ftv2blank.png" alt="&nbsp;" width=16 height=22 /><img src="ftv2lastnode.png" alt="\" width=16 height=22 /><img src="ftv2doc.png" alt="*" width=24 height=22 /><a class="el" href="structcstring__t.html" target="basefrm">cstring_t</a></p>
+            </div>
+          </div>
+        </div>
+        <p><img src="ftv2pnode.png" alt="o" width=16 height=22 onclick="toggleFolder('folder10', this)"/><img src="ftv2folderclosed.png" alt="+" width=24 height=22 onclick="toggleFolder('folder10', this)"/><a class="el" href="annotated.html" target="basefrm">cstring - Libraries Class List</a></p>
+        <div id="folder10">
+          <p><img src="ftv2vertline.png" alt="|" width=16 height=22 /><img src="ftv2lastnode.png" alt="\" width=16 height=22 /><img src="ftv2doc.png" alt="*" width=24 height=22 /><a class="el" href="structcstring__t.html" target="basefrm">cstring_t</a></p>
+        </div>
+        <p><img src="ftv2node.png" alt="o" width=16 height=22 /><img src="ftv2doc.png" alt="*" width=24 height=22 /><a class="el" href="functions.html" target="basefrm">Class Members</a></p>
+        <p><img src="ftv2pnode.png" alt="o" width=16 height=22 onclick="toggleFolder('folder11', this)"/><img src="ftv2folderclosed.png" alt="+" width=24 height=22 onclick="toggleFolder('folder11', this)"/><a class="el" href="namespaces.html" target="basefrm">cstring - Libraries Namespace List</a></p>
+        <div id="folder11">
+          <p><img src="ftv2vertline.png" alt="|" width=16 height=22 /><img src="ftv2lastnode.png" alt="\" width=16 height=22 /><img src="ftv2doc.png" alt="*" width=24 height=22 /><a class="el" href="namespacestlsoft.html" target="basefrm">stlsoft</a></p>
+        </div>
+        <p><img src="ftv2pnode.png" alt="o" width=16 height=22 onclick="toggleFolder('folder12', this)"/><img src="ftv2folderclosed.png" alt="+" width=24 height=22 onclick="toggleFolder('folder12', this)"/><a class="el" href="files.html" target="basefrm">cstring - Libraries File List</a></p>
+        <div id="folder12">
+          <p><img src="ftv2vertline.png" alt="|" width=16 height=22 /><img src="ftv2node.png" alt="o" width=16 height=22 /><img src="ftv2doc.png" alt="*" width=24 height=22 /><a class="el" href="mainpage_8src.html" target="basefrm">P:/dev2/freelibs/cstring/3.6/_internal/doc-src/mainpage.src</a></p>
+          <p><img src="ftv2vertline.png" alt="|" width=16 height=22 /><img src="ftv2lastnode.png" alt="\" width=16 height=22 /><img src="ftv2doc.png" alt="*" width=24 height=22 /><a class="el" href="cstring_8h.html" target="basefrm">cstring/cstring.h</a></p>
+        </div>
+        <p><img src="ftv2node.png" alt="o" width=16 height=22 /><img src="ftv2doc.png" alt="*" width=24 height=22 /><a class="el" href="globals.html" target="basefrm">File Members</a></p>
+        <p><img src="ftv2plastnode.png" alt="\" width=16 height=22 onclick="toggleFolder('folder13', this)"/><img src="ftv2folderclosed.png" alt="+" width=24 height=22 onclick="toggleFolder('folder13', this)"/><a class="el" href="pages.html" target="basefrm">cstring - Libraries Related Pages</a></p>
+        <div id="folder13">
+          <p><img src="ftv2blank.png" alt="&nbsp;" width=16 height=22 /><img src="ftv2lastnode.png" alt="\" width=16 height=22 /><img src="ftv2doc.png" alt="*" width=24 height=22 /><a class="el" href="deprecated.html" target="basefrm">Deprecated List</a></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

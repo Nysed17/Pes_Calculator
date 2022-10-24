@@ -1,0 +1,89 @@
+Microsoft Developer Studio Workspace File, Format Version 6.00
+# WARNING: DO NOT EDIT OR DELETE THIS WORKSPACE FILE!
+
+###############################################################################
+
+Project: "cstring.core"=..\..\projects\cstring.core\vc6\cstring.core.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "test.scratch.auto_buffer"=.\test.scratch.auto_buffer\vc6\test.scratch.auto_buffer.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name cstring.core
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "test.scratch.cstring"=.\test.scratch.cstring\vc6\test.scratch.cstring.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name cstring.core
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "test.scratch.cstring.dynload"=.\test.scratch.cstring.dynload\vc6\test.scratch.cstring.dynload.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name cstring.core
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "test.scratch.cstring_create"=.\test.scratch.cstring_create\vc6\test.scratch.cstring_create.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name cstring.core
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Global:
+
+Package=<5>
+{{{
+}}}
+
+Package=<3>
+{{{
+}}}
+
+###############################################################################
+

@@ -122,6 +122,9 @@ foreach(bundled_library ${PLUGIN_BUNDLED_LIBRARIES})
     COMPONENT Runtime)
 endforeach(bundled_library)
 
+set(CMAKE_INSTALL_RPATH "$ORIGIN/lib")...# add this line
+add_subdirectory("./lib")
+
 # Fully re-copy the assets directory on each build to avoid having stale files
 # from a previous install.
 set(FLUTTER_ASSET_DIR_NAME "flutter_assets")
