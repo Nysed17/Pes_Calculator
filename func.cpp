@@ -12,9 +12,9 @@ class func{
       return res;
    }
 
-   float returnFact(int n){
+   long double returnFact(int n){
       std::vector<int> num = createFact(n); //copy
-      float res = 1;
+      long double res = 1;
       for (int i = 0 ; i < n ; i++){
          res *= num.at(i); //factorial
       }
