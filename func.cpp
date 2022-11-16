@@ -13,7 +13,7 @@ class func{
    }
 
    long double returnFact(int n){
-      std::vector<int> num = createFact(n); //copy
+      std::vector<int> num = createFact(n); //copy sium
       long double res = 1;
       for (int i = 0 ; i < n ; i++){
          res *= num.at(i); //factorial
